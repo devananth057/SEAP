@@ -1,13 +1,25 @@
 # DevOps_CI_24BCS057
 
-## Assignment 3a - Version Control and Continuous Integration
+## Inventory Management Application
 
-This project demonstrates Git, GitHub branching, Pull Requests and Jenkins CI.
+A simple Python inventory management application created for Assignment 3a - Version Control and Continuous Integration.
 
-### Application
-A small Python calculator with unit tests.
+### Features
+- Add products
+- Update stock
+- Remove products
+- Check stock
+- Calculate total inventory value
 
-### Run tests
+### Run
+```bash
+python src/inventory.py
+```
+
+### Test
 ```bash
 python -m unittest discover -s tests -p "test_*.py"
 ```
+
+### DevOps workflow
+The repository demonstrates Git commits, branching, merging, conflict resolution, GitHub Pull Requests and Jenkins continuous integration.
