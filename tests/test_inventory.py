@@ -1,5 +1,5 @@
 import unittest
-from src.inventory import inventory, add_product, update_stock, remove_product, get_stock, inventory_value
+from src.inventory import inventory, add_product, update_stock, remove_product, get_stock, inventory_value, low_stock_products
 
 class TestInventory(unittest.TestCase):
     def setUp(self):
@@ -20,6 +20,10 @@ class TestInventory(unittest.TestCase):
 
     def test_inventory_value(self):
         self.assertEqual(inventory_value(), 16500)
+
+    def test_low_stock_products(self):
+        update_stock("P001", 3)
+        self.assertEqual(low_stock_products(), ["P001"])
 
 if __name__ == "__main__":
     unittest.main()
