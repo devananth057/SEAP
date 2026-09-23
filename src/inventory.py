@@ -27,6 +27,9 @@ def get_stock(product_id):
 def inventory_value():
     return sum(item["quantity"] * item["price"] for item in inventory.values())
 
+def low_stock_products(threshold=5):
+    return [product_id for product_id, item in inventory.items() if item["quantity"] <= threshold]
+
 if __name__ == "__main__":
     add_product("P001", "Keyboard", 10, 750)
     add_product("P002", "Mouse", 20, 450)
