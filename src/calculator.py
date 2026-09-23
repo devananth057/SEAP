@@ -17,3 +17,6 @@ def divide(a, b):
 if __name__ == "__main__":
     print("DevOps CI Calculator")
     print("2 + 3 =", add(2, 3))
+
+# Feature branch enhancement
+print("Feature: calculator ready")
