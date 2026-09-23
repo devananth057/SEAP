@@ -30,7 +30,7 @@ def inventory_value():
 if __name__ == "__main__":
     add_product("P001", "Keyboard", 10, 750)
     add_product("P002", "Mouse", 20, 450)
-    print("Inventory Management System")
+    print("Inventory Management System - Feature Branch")
     for product_id, item in inventory.items():
         print(product_id, item["name"], "Stock:", item["quantity"])
     print("Total Inventory Value:", inventory_value())
